@@ -8,10 +8,11 @@ class Cerb5BlogSnippetTokenTimeTracker implements IContextToken {
 		
 			$sql = "SELECT sum(tte.time_actual_mins) mins ";
 			$sql .= "FROM timetracking_entry tte ";
-			$sql .= sprintf("WHERE tte.source_id =  %d ", $context_values['id']);
-			$sql .= "AND tte.source_extension_id = 'timetracking.source.ticket' ";
-			$sql .= "GROUP BY tte.source_id ";
-
+			$sql .= "INNER JOIN context_link ON (context_link.to_context = 'cerberusweb.contexts.timetracking' ";
+			$sql .= "AND context_link.to_context_id = tte.id AND context_link.from_context = 'cerberusweb.contexts.ticket') ";
+			$sql .= sprintf("WHERE context_link.from_context_id =  %d ", $context_values['id']);
+			$sql .= "GROUP BY context_link.from_context_id ";
+            
 			$rs = $db->Execute($sql) or die(__CLASS__ . '('.__LINE__.')'. ':' . $db->ErrorMsg()); 
 			
 			if($row = mysql_fetch_assoc($rs)) {
