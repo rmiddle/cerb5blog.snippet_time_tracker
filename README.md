@@ -1,22 +1,38 @@
-Cerb5 Plugins - datacenter.control_panels
+`Warning not yet ready for use`
 ===========================================
-Copyright (C) 2011 WebGroup Media, LLC.  
-[http://www.cerberusweb.com/](http://www.cerberusweb.com/)  
+
+Cerb5 Plugins - cerb5blog.snippet_time_tracker
+===========================================
+Copyright (C) 2011 Robert Middleswarth
+[http://www.cerb5blog.com/](http://www.cerb5blog.com/)  
 
 What's this?
 ------------
-This plugin adds control panel objects to the Datacenter feature.
+Add a snippet to tickets that list the total time tracked on the ticket. 
 
-Installation
+* Not yet Tested
+
+Installation using Git
 ------------
 * Change directory to **/cerb5/storage/plugins/**
-* `git clone git://github.com/cerb5-plugins/datacenter.control_panels.git`
+* `git clone git://github.com/rmiddle/cerb5blog.snippet_time_tracker.git`
+* `cd cerb5blog.snippet_time_tracker`
+* `git checkout --track -b 5.3 origin/5.3`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
+
+Installation using zip / tar.gz
+------------
+* Goto `https://github.com/rmiddle/cerb5blog.snippet_time_tracker`
+* Select the correct branch that matches your version of Cerberus
+* click Download button.
+* Unzip in to **/cerb5/storage/plugins/cerb5blog.snippet_time_tracker**
+* In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
+
+Note: Make sure you branch number matches your Cerberus Version Number.
 
 Credits
 -------
-This plugin was developed by [WebGroup Media, LLC](http://www.cerberusweb.com/).
-Development was sponsored by [Nolan Interactive](http://www.nolaninteractive.com/).  
+This plugin was developed by [Robert Middleswarth](http://www.cerb5blog.com/).
 
 License
 -------
