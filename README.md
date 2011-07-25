@@ -1,6 +1,3 @@
-`Warning not yet ready for use`
-===========================================
-
 Cerb5 Plugins - cerb5blog.snippet_time_tracker
 ===========================================
 Copyright (C) 2011 Robert Middleswarth
@@ -10,7 +7,7 @@ What's this?
 ------------
 Add a snippet to tickets that list the total time tracked on the ticket. 
 
-* Not yet Tested
+* Tested under Cerberus 5.3.3
 
 Installation using Git
 ------------
