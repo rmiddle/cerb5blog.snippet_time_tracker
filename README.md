@@ -3,18 +3,21 @@ Cerb5 Plugins - cerb5blog.snippet_time_tracker
 Copyright (C) 2011 Robert Middleswarth
 [http://www.cerb5blog.com/](http://www.cerb5blog.com/)  
 
+`Warning this version is still considered in development and may not work as expected`
+===========================================
+
 What's this?
 ------------
 Add a snippet to tickets that list the total time tracked on the ticket. 
 
-* 5.6.2
+* Not yet Tested
 
 Installation using Git
 ------------
 * Change directory to **/cerb5/storage/plugins/**
 * `git clone git://github.com/rmiddle/cerb5blog.snippet_time_tracker.git`
 * `cd cerb5blog.snippet_time_tracker`
-* `git checkout --track -b 5.6 origin/5.6`
+* `git checkout --track -b 5.7 origin/5.7`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
 Installation using zip / tar.gz
