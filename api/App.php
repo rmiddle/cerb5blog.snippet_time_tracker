@@ -2,6 +2,10 @@
 class Cerb5BlogSnippetTokenTimeTracker implements IContextToken {
 	static function getValue($context, $context_values) {
 		$total_time_all = -1;
+        echo "context = ";
+        print_r($context);
+        echo "context_values = ";
+        print_r($context_values);
 		if($context_values['id']) {
 			// Adds total time worked per ticket to the token list.
 			$db = DevblocksPlatform::getDatabaseService();
