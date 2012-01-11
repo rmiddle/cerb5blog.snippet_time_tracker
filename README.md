@@ -17,7 +17,7 @@ Installation using Git
 * Change directory to **/cerb5/storage/plugins/**
 * `git clone git://github.com/rmiddle/cerb5blog.snippet_time_tracker.git`
 * `cd cerb5blog.snippet_time_tracker`
-* `git checkout --track -b 5.7 origin/5.7`
+* `git checkout --track -b 5.8 origin/5.8`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
 Installation using zip / tar.gz
