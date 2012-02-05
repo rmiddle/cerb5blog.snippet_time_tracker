@@ -9,7 +9,7 @@
 	<image>plugin.png</image>
  
 	<requires>
-		<app_version min="5.6" max="5.7" />
+		<app_version min="5.6" max="5.7.99" />
 	</requires>
   
 	<!-- Plugin Dependencies -->
@@ -32,6 +32,40 @@
 			<params>
 				<param key="token" value="time_tracker_min_total" />
 				<param key="label" value="Total Time tracked Min" />
+				<param key="contexts">
+					<value>
+						<data key="cerberusweb.contexts.ticket" />
+					</value>
+				</param>
+			</params>
+		</extension>
+		<extension point="cerberusweb.snippet.token">
+			<id>cerb5blog.snippet.token.time_tracker.billable</id>
+			<name>Time tracking Total Min</name>
+			<class>
+				<file>api/App.php</file>
+				<name>Cerb5BlogSnippetTokenTimeTrackerBillable</name>
+			</class>
+			<params>
+				<param key="token" value="time_tracker_min_total_billable" />
+				<param key="label" value="Total Time tracked - Billable" />
+				<param key="contexts">
+					<value>
+						<data key="cerberusweb.contexts.ticket" />
+					</value>
+				</param>
+			</params>
+		</extension>
+		<extension point="cerberusweb.snippet.token">
+			<id>cerb5blog.snippet.token.time_tracker.non.billable</id>
+			<name>Time tracking Total Min</name>
+			<class>
+				<file>api/App.php</file>
+				<name>Cerb5BlogSnippetTokenTimeTrackerNonBillable</name>
+			</class>
+			<params>
+				<param key="token" value="time_tracker_min_total_non_billable" />
+				<param key="label" value="Total Time tracked - Non Billable" />
 				<param key="contexts">
 					<value>
 						<data key="cerberusweb.contexts.ticket" />
