@@ -36,7 +36,7 @@ class Cerb5BlogSnippetTokenTimeTrackerBillable implements IContextToken {
 			$sql = "SELECT sum(tte.time_actual_mins) mins ";
 			$sql .= "FROM timetracking_entry tte ";
 			$sql .= "INNER JOIN context_link ON (context_link.to_context = 'cerberusweb.contexts.timetracking' ";
-			$sql .= "INNER JOIN timetracking_activity tta ON (tta.id = tte.activity_id ";
+			$sql .= "INNER JOIN timetracking_activity tta ON (tta.id = tte.activity_id) ";
 			$sql .= "AND context_link.to_context_id = tte.id AND context_link.from_context = 'cerberusweb.contexts.ticket') ";
 			$sql .= sprintf("WHERE context_link.from_context_id =  %d ", $context_values['id']);
 			$sql .= "AND tta.rate != 0 ";
@@ -65,7 +65,7 @@ class Cerb5BlogSnippetTokenTimeTrackerNonBillable implements IContextToken {
 			$sql = "SELECT sum(tte.time_actual_mins) mins ";
 			$sql .= "FROM timetracking_entry tte ";
 			$sql .= "INNER JOIN context_link ON (context_link.to_context = 'cerberusweb.contexts.timetracking' ";
-			$sql .= "INNER JOIN timetracking_activity tta ON (tta.id = tte.activity_id ";
+			$sql .= "INNER JOIN timetracking_activity tta ON (tta.id = tte.activity_id) ";
 			$sql .= "AND context_link.to_context_id = tte.id AND context_link.from_context = 'cerberusweb.contexts.ticket') ";
 			$sql .= sprintf("WHERE context_link.from_context_id =  %d ", $context_values['id']);
 			$sql .= "AND tta.rate = 0 ";
