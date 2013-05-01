@@ -7,14 +7,14 @@ What's this?
 ------------
 Add a snippet to tickets that list the total time tracked on the ticket. 
 
-* 5.7.0
+* Not yet tested
 
 Installation using Git
 ------------
 * Change directory to **/cerb5/storage/plugins/**
 * `git clone git://github.com/rmiddle/cerb5blog.snippet_time_tracker.git`
 * `cd cerb5blog.snippet_time_tracker`
-* `git checkout --track -b 5.7 origin/5.7`
+* `git checkout --track -b 6.3 origin/6.3`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
 Installation using zip / tar.gz

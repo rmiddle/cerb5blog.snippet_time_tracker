@@ -13,7 +13,7 @@ class Cerb5BlogSnippetTokenTimeTracker implements IContextToken {
 			$sql .= sprintf("WHERE context_link.from_context_id =  %d ", $context_values['id']);
 			$sql .= "GROUP BY context_link.from_context_id ";
             
-			$rs = $db->Execute($sql) or die(__CLASS__ . '('.__LINE__.')'. ':' . $db->ErrorMsg()); 
+			$rs = $db->Execute($sql) or die(__CLASS__ . '('.__LINE__.')'. ':' . $db->ErrorMsg());
 			
 			if($row = mysql_fetch_assoc($rs)) {
 				$total_time_all = intval($row['mins']);			
