@@ -39,6 +39,8 @@
 				</param>
 			</params>
 		</extension>
+
+                <!--
 		<extension point="cerberusweb.snippet.token">
 			<id>cerb5blog.snippet.token.time_tracker.billable</id>
 			<name>Time tracking Total Min</name>
@@ -73,7 +75,7 @@
 				</param>
 			</params>
 		</extension>
-		
+		-->
 	</extensions>
 
 </plugin>

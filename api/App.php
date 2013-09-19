@@ -25,7 +25,7 @@ class Cerb5BlogSnippetTokenTimeTracker implements IContextToken {
 		return $total_time_all;
 	}
 };
-
+/*
 class Cerb5BlogSnippetTokenTimeTrackerBillable implements IContextToken {
 	static function getValue($context, $context_values) {
 		$total_time_billable = -1;
@@ -83,3 +83,4 @@ class Cerb5BlogSnippetTokenTimeTrackerNonBillable implements IContextToken {
 		return $total_time_non_billable;
 	}
 };
+*/
